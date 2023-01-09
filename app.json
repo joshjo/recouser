@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "recoapp",
-    "slug": "recoapp",
+    "slug": "reco",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -28,6 +28,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "77abecdf-b37d-49b5-b80a-1d3a4a9f1e40"
+      }
+    },
+    "owner": "joshjo"
   }
 }
