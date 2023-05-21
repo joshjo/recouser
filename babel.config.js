@@ -15,6 +15,22 @@ module.exports = function(api) {
           },
         },
       ],
+      [
+        'transform-inline-environment-variables',
+        {
+          include: ['TAMAGUI_TARGET']
+        }
+      ],
+      [
+        "@tamagui/babel-plugin",
+        {
+          components: ["tamagui"],
+          config: "./tamagui.config.ts",
+          logTimings: true,
+        },
+      ],
+      // NOTE: this is only necessary if you are using reanimated for animations
+      "react-native-reanimated/plugin",
     ],
   };
 };
